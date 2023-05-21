@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>AMATERAS</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				{% for i in header: %}
+				<th scope="col">{{ i }}</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for i in record: %}
+			<tr>
+				{% for j in i: %}
+				<td>{{ j }}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
+
